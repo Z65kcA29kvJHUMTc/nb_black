@@ -1,5 +1,24 @@
 # nb_black
 
+## n8henrie fork notes
+
+NB: This is a fork of https://github.com/dnanhkhoa/nb_black that has been
+minimally modified to allow me to set a custom line length. Brief discussion:
+https://github.com/dnanhkhoa/nb_black/issues/10#issuecomment-649744254
+
+For this fork:
+
+- installation: `pip install git+https://github.com/n8henrie/nb_black`
+- use with default settings: `%load_ext lab_black`
+- alternatively, use with custom line length:
+    ```python
+    import lab_black
+
+    lab_black.load_ipython_extension(get_ipython(), line_length=79)
+    ```
+
+END n8henrie fork notes
+
 [![PyPI](https://img.shields.io/pypi/v/nb_black.svg)](https://pypi.org/project/nb-black/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nb_black.svg)](https://pypi.org/project/nb-black/)
 
