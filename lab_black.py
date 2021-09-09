@@ -253,7 +253,7 @@ black_formatter = None
 def load_ipython_extension(ip, line_length=88):
     global black_formatter
     mode = black.FileMode(
-        target_versions={black.TargetVersion.PY38}, line_length=line_length,
+        target_versions={black.TargetVersion.PY39}, line_length=line_length,
     )
 
     if black_formatter is None:
