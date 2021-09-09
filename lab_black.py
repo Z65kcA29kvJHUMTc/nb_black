@@ -250,7 +250,7 @@ class BlackFormatter(object):
 black_formatter = None
 
 
-def load_ipython_extension(ip, line_length=88):
+def load_ipython_extension(ip, line_length=79):
     global black_formatter
     mode = black.FileMode(
         target_versions={black.TargetVersion.PY39}, line_length=line_length,
