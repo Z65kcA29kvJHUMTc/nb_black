@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import black
+
 from lab_black import BlackFormatter, black_formatter, unload_ipython_extension
 
 def load_ipython_extension(ip, line_length=79):
